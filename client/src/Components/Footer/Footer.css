@@ -1,0 +1,155 @@
+/* Richie T-57866 */
+
+/* ==========   Footer   ========== */
+
+#communityBanner {
+    height: 45vh;
+    min-height: 650px;
+    background-color: rgb(41, 44, 51);
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#hb1 {
+    width: 100%;
+}
+
+#hb1 > p {
+    font-size: 32px;
+    text-align: center;
+}
+
+#contactDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column > li {
+    margin: 50px 0;
+}
+
+.smallerDevices {
+    display: none !important;
+}
+
+#iconDiv {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 42px;
+    padding: 0 1.4px;
+}
+
+#iconDiv a {
+    transition: all 0.2s linear;
+}
+
+#iconDiv a:hover {
+    opacity: .5;
+    border: none;
+}
+
+#facebook, #linkedin {
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    border-radius: 12%;
+}
+
+#facebook {
+    color: #AE02AE;
+}
+
+#twitter {
+    color: #eee;
+    background-color: var(--main-text-color);
+    padding: 9px;
+    border-radius: 50%;
+    display: flex;
+}
+/* Had to create background color scheme for Google logo because having problems with current version of font-awesome. */
+#google {
+    background: radial-gradient(circle at 52% 41%, #164ec0 3%, transparent 3%),radial-gradient(circle at 74.4% 77.4%, #164EC0 3%, transparent 3%),radial-gradient(circle at 76.4% 79.4%, #164EC0 3%, transparent 3%),radial-gradient(circle at 84% 85%, #164ec0 3%, transparent 3%),radial-gradient(circle at 75% 78%, #164ec0 3%, transparent 3%),radial-gradient(circle at 67% 72%, #164EC8 2%, transparent 2%),radial-gradient(circle at 68.4% 72%, #164EC0 3%, transparent 3%),radial-gradient(circle at 72% 72%, #164ec0 5%, transparent 5%),radial-gradient(circle at 74% 74%, #164ec0 5%, transparent 5%),radial-gradient(circle at 85% 76%, #164ec0 10%, transparent 10%),radial-gradient(circle at 95% 83%, #164ec0 10%, transparent 10%), radial-gradient(ellipse at 108% 52%, #164ec0 40%, transparent 40%),-webkit-linear-gradient(48deg, transparent 0%, transparent 44%, #bc1a0a 45%),-webkit-linear-gradient(220deg, #164ec0 0%, #164ec0 51%, transparent 51%),-webkit-linear-gradient(125deg, #1b7d2b 0%, #1b7d2b 57%, #f7b802 58%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#instagram {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    color: #eee;
+    padding: 0 4px;
+    border-radius: 7px;
+}
+
+#youtube {
+    color: rgb(255, 0, 0);
+    background: radial-gradient(#eee 20%, transparent 40%);
+}
+
+#linkedin {
+    color: #008b8b;
+}
+
+
+/*=====Media Query CSS Start======*/
+
+@media (max-width:1368px){
+
+    #humanityBanner {
+        height: 60vh;
+        min-height: 708px;
+    }
+
+}
+
+
+@media (max-width:991px){
+    #iconDiv {
+        padding: 0 1.1px;
+        width: 85%;
+    }
+}
+
+
+@media (max-width:767px){
+    #humanityBanner {
+        height: 70vh;
+        min-height: 930px;
+    }
+}
+
+
+@media (max-width:767px){
+    #communityBanner {
+        padding: 125px 0 200px;
+    }
+
+    #hb1 {
+        margin-bottom: 25px
+    }
+
+    #iconDiv {
+        width: 100%;
+    }
+
+    .smallerDevices {
+        display: flex !important;
+    }
+
+    #facebook, #linkedin {
+        display: flex;
+        align-self: stretch;
+        align-items: center;
+        border-radius: 20%;
+        width: 26px;
+        height: 32px;
+        margin: auto 0;
+    }
+}
+
+/*=====Media Query Css End======*/

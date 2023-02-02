@@ -1,0 +1,59 @@
+/* Richie T-57866 */
+
+#altPageBody {
+    max-height: 80vh;
+    padding: 75px 0 50px;
+}
+
+#altPageBody::-webkit-scrollbar {
+    width: 3px;
+}
+
+#altPageBody::-webkit-scrollbar-thumb {
+    background: var(--main-text-color);
+    border-radius: 10px;
+}
+
+#altPageBody::-webkit-scrollbar-thumb-track {
+    width: 5px;
+}
+
+#mainP {
+    padding: 0 25px;
+    text-align: center;
+    color: rgb(243, 158, 1);
+}
+
+.mainContent {
+    padding: 0 35px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    max-width: 95%;
+    margin: 50px;
+    line-height: 1.5;
+}
+
+.mainContent li {
+    margin: 20px 0;
+}
+
+
+/*=====Media Query CSS Start======*/
+
+@media (min-width:992px){
+    #mainP {
+        font-size: 30px;
+    }
+    #altPageBody {
+        overflow-y: auto;
+    }
+}
+
+
+@media (max-width:991px){
+    .mainContent {
+        margin: 50px auto;
+    }
+}
+
+/*=====Media Query Css End======*/

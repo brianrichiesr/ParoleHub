@@ -1,0 +1,563 @@
+/* Richie T-57866 */
+
+/* --- Landing Page --- */
+
+#appMainContentDiv {
+    height: 90vh;
+    padding-bottom: 10vh;
+    overflow-y: auto;
+}
+
+#appMainContentDiv::-webkit-scrollbar {
+    width: 3px;
+    background-color: var(--background-color);
+}
+
+#appMainContentDiv::-webkit-scrollbar-thumb {
+    background: var(--main-text-color);
+    border-radius: 10px;
+}
+
+#appMainContentDiv::-webkit-scrollbar-thumb-track {
+    width: 5px;
+}
+
+#signup {
+    border-color: var(--standard-color);
+    background-color: var(--standard-color);
+}
+
+#login {
+    border-color: var(--input-hover-color);
+    background-color: var(--input-hover-color);
+}
+
+#midHeaderDiv {
+    display: flex;
+    height: 16%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.motto {
+    color: rgb(255, 255, 255);
+    height: 45%;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.landingDiv {
+    background-color: #fff;
+}
+
+.landingPageH1Adjust {
+    padding-right: 21px;
+}
+
+.welcomeH2 {
+    font-size: 50px;
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+.landingHeader {
+    height: 650px;
+    /* Browsers will treat linear-gradient as an image and will stack it with your actual image. Got help for this from https://stack.tlm.cloud/stackoverflow/34173169  */
+    background-image:  linear-gradient(0deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../../Images/header-background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center 40px;
+    background-attachment: fixed;
+    padding-top: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonials {
+    height: 70em;
+    background-color:rgb(41, 44, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: transparent;
+}
+
+.box {
+    width: 70%;
+    max-width: 1300px;
+    display: flex;
+    background-color: #fff;
+    height: 400px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.testP {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.testimonialImage {
+    width: 48%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 3%;
+}
+
+.testimonialQuote {
+    line-height: 1.7;
+    overflow-wrap: break-word;
+}
+
+.imgOne, .imgTwo {
+    background-position: center 15%;
+}
+
+.left {
+    border-radius: 5px 0 0 5px;
+}
+
+.right {
+    border-radius: 0 5px 5px 0;
+}
+
+/* Made a seperate folder for these background images. Having difficulty getting background images from the public folder. */
+
+.imgOne {
+    background-image: url('../../Images/aaron.jpeg');
+}
+
+.imgTwo {
+    background-image: url('../../Images/deanna.jpeg');
+}
+
+.imgThree {
+    background-image: url('../../Images/chris.jpeg');
+}
+
+.imgFour {
+    background-image: url('../../Images/diego.jpeg');
+}
+
+.testimonialInfo {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0px 50px;
+}
+
+.divOne {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.divOne p, .divTwo {
+    color: rgb(90, 89, 89);
+}
+
+.divTwo {
+    height: 200px;
+    font-size: 24px;
+}
+
+#midPageDiv {
+    height: 650px;
+    background-image: url('../../Images/login-mid.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 35% 50%;
+}
+
+#landingInfo {
+    background-color: #fff;
+}
+
+.infoRow {
+    display: flex;
+    justify-content: center;
+}
+
+#infoHr {
+    height: 1px !important;
+    background-color: rgb(214, 214, 214);
+    width: 85%;
+    margin: 20px auto;
+}
+
+.infoText {
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.borderRight {
+    border-right: 1px solid rgb(214, 214, 214);
+}
+
+.borderLeft {
+    border-left: 1px solid rgb(214, 214, 214);
+}
+
+.infoTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+#quoteImg {
+    min-height: 100px;
+    min-width: 100px;
+    border-radius: 50%;
+    border: 2px solid rgb(214, 214, 214);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 10%;
+}
+
+#designerBox {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#designerImg {
+    height: 150px;
+    width: 250px;
+    border-radius: 5px;
+    background-image: url('../../Images/selfie.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 10%;
+    margin: 0 auto 20px;
+}
+
+#designerQuote {
+    text-align: center;
+}
+
+#designerName {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(90, 89, 89);
+    padding: 10px 30px;
+    line-height: 1.5;
+}
+
+
+/* --- Login/Signup --- */
+
+#signupButton {
+    border-color: var(--standard-color);
+    background-color: var(--standard-color);
+}
+
+#signupButton:hover {
+    border-color: var(--alt-color);
+    background-color: var(--alt-color);
+}
+
+#loginButton {
+    border-color: var(--alt-color);
+    background-color: var(--alt-color);
+}
+
+#loginButton:hover {
+    border-color: var(--standard-color);
+    background-color: var(--standard-color);
+}
+
+#signup:focus, #login:focus, #startOver:focus {
+    border-color: var(--focus-color);
+    background-color: var(--focus-color);
+}
+
+/*=====Media Query CSS Start======*/
+
+@media (max-width:1368px){
+    .landingHeader {
+        padding-right: 5px;
+    }
+
+    .landingPageH1Adjust {
+        padding-right: 26px;
+    }
+
+    .loginAdjust {
+        padding-right: 36px;
+    }
+
+    .testimonials {
+        height: 75em;
+    }
+
+    .testimonialTwo {
+        padding-bottom: 100px;
+    }
+
+    .box {
+        height: 500px;
+        width: 85%;
+    }
+
+    .divTwo {
+        height: 275px;
+    }
+
+    .infoRow {
+        display: inline;
+    }
+
+    .infoTitle {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    #infoHr {
+        display: none;
+    }
+
+    #designerBox {
+        margin-top: -100px;
+    }
+
+    #iconDiv {
+        width: 75%;
+    }
+}
+
+
+@media (max-width:991px){
+    #navbarDiv {
+        position: relative;
+    }
+
+    #appMainContentDiv {
+        overflow-y: inherit;
+    }
+
+     .landingHeader {
+        height: 490px;
+        background-attachment: inherit;
+        background-position: center, center;
+    }
+
+    .motto {
+        font-size: 20px;
+    }
+
+    .box {
+        height: 370px;
+    }
+
+    .testP {
+        font-size: 20px;
+    }
+
+    .divOne {
+        height: 75px;
+    }
+
+    .divTwo {
+        font-size: 18px;
+        height: 200px;
+    }
+
+    #midPageDiv {
+        /* background-size: inherit; */
+        background-position: 55% 45%;
+        height: 450px;
+    }
+
+    .welcomeH2 {
+        font-size: 32px;
+    }
+
+    #contactDiv .column  li p {
+        font-size: 18px;
+    }
+
+    .loginAdjust {
+        padding-right: 32px;
+    }
+}
+
+
+@media (max-width:767px){
+    .box {
+        height: 600px;
+        justify-content: space-between;
+    }
+    
+    .lower {
+        flex-direction: column-reverse;
+    }
+
+    .upper {
+        flex-direction: column;
+    }
+
+    #midPageDiv {
+        background-position: 47% 50%;
+    }
+
+    .testimonials {
+        height: 85em;
+    }
+
+    .testimonialImage {
+        width: 100%;
+        height: 45%;
+    }
+
+    .testimonialQuote {
+        max-width: 83%;
+    }
+
+    .testimonialInfo {
+        width: 100%;
+        height: 50%;
+        padding: 0;   
+    }
+
+    .divOne, .divTwo {
+        padding: 0 30px 0 40px;
+        max-width: 100%;
+    }
+
+    .divTwo {
+        height: 55%;
+    }
+
+    .left, .right {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .landingHeader {
+        height: 450px;
+    }
+
+    .welcomeH2 {
+        font-size: 32px;
+    }
+
+    .homeContent {
+        max-width: 570px;
+        margin: 15px auto !important;
+    }
+
+    .column > li {
+        margin: 25px 0;
+    }
+
+    .column {
+        margin-bottom: -25px;
+    }
+
+    #contactDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infoTitle {
+        padding: 0;
+        flex-direction: column;
+        height: 135px;
+    }
+
+    #quoteImg {
+        min-height: 80px;
+        min-width: 80px;
+    }
+
+    .largerDevices {
+        display: none !important;
+    }
+
+    #iconDiv {
+        width: 100%;
+        height: 28px;
+    }
+}
+
+
+@media (max-width:575px){
+    .landingHeader {
+        height: 600px;
+    }
+
+    .testP {
+        font-size: 18px;
+    }
+
+    .testimonialQuote {
+        max-width: 80%;
+    }
+
+    .divTwo, #designerName {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width:500px){
+    .welcomeH2 {
+        font-size: 24px;
+    }
+
+    .box {
+        height: 550px;
+    }
+
+    .testimonialImage {
+        height: 35%;
+    }
+
+    .testimonialInfo {
+        height: 65%;
+    }
+}
+
+
+@media (max-width:400px){
+    .divTwo {
+        height: 65%;
+    }
+}
+
+
+@media (max-width:350px){
+    .landingHeader {
+        height: 700px;
+    }
+
+    .motto {
+        padding: 0;
+    }
+
+    .box {
+        height: 700px;
+    }
+
+    #midHeaderDiv {
+        height: 28%;
+    }
+
+    .testimonials {
+        height: 100em;
+    }
+}
+
+/*=====Media Query Css End======*/

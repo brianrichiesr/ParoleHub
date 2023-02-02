@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"zip":{"$numberInt":"1"}},"name":"zip_1","background":true,"unique":true}],"uuid":"14424875d80c478e9db79680d51a91e8","collectionName":"zipcodes","type":"collection"}

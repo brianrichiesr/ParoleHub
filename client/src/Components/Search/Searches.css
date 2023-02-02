@@ -1,0 +1,224 @@
+/* Richie T-57866 */
+
+/* ==========   Main Body   ========== */
+
+#mb1 {
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+#mb2 {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 36px 0 0;
+}
+
+#mb3 {
+    padding: 10px 21px 9px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#mb4 {
+    padding: 0 20px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+#mb5 {
+    padding: 22px 0 9px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#mbContainer {
+    display: flex;
+}
+
+#mainBody {
+    display: flex;
+    height: 11vh;
+    min-height: 135px;
+    justify-content: space-between;
+}
+
+#searchH1 {
+    transition: all 0.2525s linear;
+}
+
+#searchedBy {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#searchedBy input {
+    margin: 0 20px 0 0;
+    height: 28px;
+    border: 5px solid var(--input-hover-color);
+    border-radius: 5px;
+    text-align: center;
+    width: 142px;
+    transition: all .2s linear;
+}
+
+#searchedBy input:hover {
+    border-color: var(--alt-color);
+}
+
+#filterButtonDiv {
+    display: flex;
+    padding-left: 0;
+    justify-content: flex-end;
+}
+
+#bannerSpan, #updateSpan {
+    color: var(--header-color);
+}
+
+
+/* --- Search By Page --- */
+#navLinkDiv  {
+    display: flex;
+}
+
+
+/*=====Media Query CSS Start======*/
+
+@media (min-width:1369px) {
+    .mainBodyMarginTopAdjustment {
+        margin-top: 48px;
+    }
+    
+    .marginTopZero {
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width:1368px) {
+    #mb2 {
+        padding-right: 41px;
+    }
+    
+    #mb3 {
+        padding-right: 22px;
+    }
+}
+
+
+@media (max-width:1280px){
+    #mb2  {
+        padding: 18px 36px 0 0;
+    }
+}
+
+
+@media (max-width:991px){
+    #filterButtonDiv {
+        padding-left: 0;
+        justify-content: end;
+    }
+
+    #searchedBy input {
+        width: 100px;
+        margin: 0 10px 0 0;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    
+    #mb2 {
+        padding: 10px 31px 0 0
+    }
+
+    #mb3 {
+        padding: 16px 20px 5px 0;
+    }
+
+    #mb4 {
+        padding-right: 20px;
+    }
+}
+
+
+@media (max-width:767px){
+    #navLinkDiv {
+        padding-top: 50px;
+        width: 400px;
+        justify-content: space-evenly;
+    }
+
+    #mainBody {
+        height: 213px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 40px;
+    }
+
+    #filterButtonDiv {
+        padding-top: 24px;
+        justify-content: center;
+    }
+
+    #searchedBy {
+        justify-content: center;
+    }
+
+    #searchH1 {
+        padding: 0;
+        justify-content: center;
+        min-height: 0;
+    }
+
+    #mb1 {
+        display: inline;
+        padding: 0;
+    }
+
+    #mb2 {
+        padding: 25px 0 0;
+    }
+
+    #mb1, #mb2 {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    #mb3, #mb4 {
+        padding: 0;
+    }
+
+    .userBannerSpan {
+        display: inline-block;
+        margin-top: -15px;
+    }
+}
+
+
+@media (max-width:400px){
+    #navLinkDiv  {
+        align-items: center;
+        height: 400px;
+        padding-top: 25px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #navLinkDiv a {
+        margin: 0 0 25px 0;
+    }
+
+    #updateSpan, #bannerSpan {
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+/*=====Media Query CSS End======*/

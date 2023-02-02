@@ -1,0 +1,583 @@
+/* Richie T-57866 */
+
+/* ==========   Buttons   ========== */
+
+/* --- General --- */
+
+.reactButton, #backToTop, #arrowToTop {
+    font-size: 13px;
+    width: 150px;
+    height: 33px;
+    border: 3px solid var(--main-text-color);
+    background-color: var(--main-text-color);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: all .2s linear;
+}
+
+.reactButton, #backToTop {
+    margin: 10px;
+}
+
+#arrowToTop {
+    margin: 10px 5px 10px 10px;
+}
+
+.keyword:focus, .restriction:focus, #refresh:focus {
+    background-color: var(--filter-focus-color);
+    border-color: var(--filter-focus-color);
+    color: #eee;
+    outline-width: 0;
+}
+
+.reactButton:hover, .navLink:hover, #startOver:hover, #signup:hover, #login:hover {
+    background-color: var(--alt-color) !important;
+    border-color: var(--alt-color) !important;
+    color: #eee;
+}
+
+.navLink:focus, #searchButton:focus, #filterButton:focus, #logout:focus {
+    background-color: var(--focus-color) !important;
+    border-color: var(--focus-color) !important;
+    color: #eee;
+    outline-width: 0;
+}
+
+#logout, #logoutDrop, #startOver, #signup, #login, #enterButton {
+    outline: none;
+}
+
+
+/* --- Dropdown --- */
+
+#logout, #logoutDrop {
+    background-color: var(--warning-color);
+    border-color: var(--warning-color);
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLink {
+    background-color: var(--main-text-color);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropDownLink {
+    width: 100px !important;
+}
+
+.dropdown-menu {
+    inset: 12px -42px auto auto !important;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.dropdown-toggle {
+    display: none;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+i.icon {
+    margin: 0;
+}
+
+#mainNav {
+    display: flex;
+}
+
+
+/* --- Results --- */
+
+#backToTop, #arrowToTop {
+    position: fixed;
+    bottom: 32px;
+    right: 26px;
+    opacity: .3;
+}
+
+#backToTop:hover, #arrowToTop:hover {
+    opacity: 1;
+}
+
+#backToTop:focus, #arrowToTop:focus {
+    background-color: var(--focus-color);
+    border-color: var(--focus-color);
+    opacity: 1;
+    outline: 0;
+}
+
+#arrowToTop {
+    display: none;
+}
+
+#returnToListButton {
+    border-color: var(--standard-color);
+    background-color: var(--standard-color);
+    transition: all .2s linear;
+}
+
+#changeResultDiv {
+    margin-top: 30px;
+}
+
+
+/* --- Filter --- */
+
+#filterButton {
+    border-color: var(--standard-color);
+    background-color: var(--standard-color);
+    margin: 0;
+}
+
+#filterButton:hover, .filterFocus:hover, #refresh:hover {
+    border-color: var(--alt-color) !important;
+    background-color: var(--alt-color) !important;
+}
+
+.filter {
+    border-color: var(--standard-color);
+    background-color: var(--standard-color);
+}
+
+#close {
+    display: none;
+}
+
+#refresh {
+    border-color: var(--input-hover-color);
+    background-color: var(--input-hover-color);
+}
+
+#filterDiv {
+    padding: 25px 0 50px;
+}
+
+#filters::-webkit-scrollbar {
+    width: 3px;
+}
+
+#filters::-webkit-scrollbar-thumb {
+    background: var(--main-text-color);
+    border-radius: 10px;
+}
+
+#filters::-webkit-scrollbar-thumb-track {
+    width: 5px;
+}
+
+.asideLeft {
+    position: fixed;
+    width: 360px;
+    background-color: rgba(0, 0, 0, .6);
+    overflow-y: auto;
+    margin-left: -370px;
+    margin-top: 15px;
+    text-align: center;
+    transition: all .4s;
+    height: 83%;
+}
+
+.showAside {
+    margin-left: 0;
+}
+
+.pageAdjust {
+    padding-left: 370px;
+}
+
+#filters p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.spacerButton {
+    visibility: hidden;
+    border-color: transparent;
+    background-color: transparent;
+    width: 0px !important;
+    margin: 0 !important;
+    padding: 0;
+    transition: all 0.2s linear;
+}
+
+.spacerButton:hover {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    cursor: initial !important;
+}
+
+
+/* --- Forms --- */
+
+.postButton {
+    border: 3px solid;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 7px 20px;
+    font-size: 16px;
+    transition: all 0.2s linear;
+    margin: 30px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.changeButton {
+    border: 3px solid;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 7px 20px;
+    font-size: 16px;
+    transition: all 0.2s linear;
+    margin: 10px 30px 0;
+    cursor: pointer;
+    width: 150px;
+}
+
+#prevButton:not(.disabled) {
+    background-color: var(--header-color);
+    border-color: var(--header-color);
+}
+
+#nextButton:not(.disabled) {
+    background-color: var(--main-text-color);
+    border-color: var(--main-text-color);
+}
+
+#prevButton:not(.disabled):hover, #nextButton:not(.disabled):hover {
+    background-color: var(--alt-color);
+    border-color: var(--alt-color);
+    color: #eee;
+    background-color: var(--focus-color) !important;
+    border-color: var(--focus-color) !important;
+    color: #eee;
+    outline-width: 0;
+}
+
+#prevButton:not(.disabled):focus, #nextButton:not(.disabled):focus {
+    background-color: var(--focus-color);
+    border-color: var(--focus-color);
+    color: #eee;
+    outline-width: 0;
+}
+
+#enterButton {
+    border-color: var(--standard-color);
+    background-color: var(--standard-color);
+}
+
+#updateResourceButton {
+    border-color: var(--input-hover-color);
+    background-color: var(--input-hover-color);
+    transition: all .2s linear;
+}
+
+#updateButton {
+    border-color: var(--alt-color);
+    background-color: var(--alt-color);
+}
+
+#deleteButton {
+    border-color: var(--warning-color);
+    background-color: var(--warning-color);
+}
+
+.postButton:hover {
+    background-color: var(--standard-color);
+    border-color: var(--standard-color);
+    color: rgb(238, 238, 238);
+}
+
+.postButton:focus {
+    background-color: var(--focus-color) !important;
+    border-color: var(--focus-color) !important;
+    color: rgb(238, 238, 238);
+    outline: 0;
+}
+
+
+/* --- Search --- */
+
+#searchButton {
+    font-size: 13px;
+    height: 33px;
+    border: 3px solid var(--input-hover-color);
+    background-color: var(--input-hover-color);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: all .2s linear;
+}
+
+#searchButton:hover {
+    background-color: var(--alt-color);
+    border-color: var(--alt-color);
+    color: rgb(238, 238, 238);
+}
+
+#searchButton, #filterButton {
+    width: 159px;
+    height: 40px;
+}
+
+
+/* --- Keywords/Restrictions --- */
+
+#keywords, #restrictions {
+    text-align: center;
+}
+
+.clicked {
+    color: #eee;
+    background-color: rgb(128, 0, 128);
+}
+
+.clicked:hover {
+    color: #eee;
+    background-color: var(--input-hover-color) !important;
+}
+
+.clicked:focus {
+    background-color: rgb(250, 114, 3);
+}
+
+.keywordsDiv, .restrictionsDiv {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttonBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+#enterResource {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*=====Media Query CSS Start======*/
+
+@media (min-width:1369px){
+    #changeResultDiv {
+        padding-left: 15px;
+    }
+}
+
+
+@media (max-width:1368px) and (min-width:992px){
+    #changeResultDiv {
+        padding-left: 16px;
+    }
+}
+
+
+@media (max-width:991px){
+    .barsIcon {
+        border-radius: 5px;
+        padding: 5px 0;
+    }
+    
+    button:not(#arrowToTop) {
+        width: 112px;
+    }
+
+    .navLink:not(.dropDownLink) {
+        width: 106px;
+    }
+
+    .reactButton {
+        font-size: 11.7px;
+        margin: 5px;
+    }
+
+    #login {
+        margin-right: 0;
+    }
+
+    #enterButton, #updateButton, #deleteButton {
+        font-size: 13px;
+    }
+
+    #backToTop {
+        display: none;
+    }
+    #resultsTop {
+        display: none;
+    }
+
+    #arrowToTop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 30px;
+        right: 39px;
+        opacity: .4;
+        width: 30px;
+        height: 30px;
+        transform: scale(2);
+        background-color: rgb(255, 255, 255);
+    }
+
+
+    /* --- Keywords/Restrictions */
+
+    .keywordsDiv .buttonBlock button {
+        width: 118px !important;
+    }
+
+
+    /* --- Filter --- */
+
+    .asideLeft {
+        width: 160px;
+        height: 98%;
+        margin-top: -129px;
+        padding: 0;
+    }
+
+    .pageAdjust {
+        padding-left: 160px;
+    }
+
+    #filters .keywordsDiv {
+        display: inline;
+        text-align: center;
+    }
+
+    #filters .keywordsDiv .buttonBlock button {
+        margin: 5px auto;
+    }
+}
+
+
+@media (max-width: 991px) and (min-width: 768px){
+    #changeResultDiv {
+        padding-left: 4px;
+    }
+}
+
+
+@media (max-width:767px){
+    #mainNav {
+        display: none;
+    }
+
+    
+    /* --- Dropdown --- */
+
+    .dropdown-toggle {
+        display: inline;
+        color: var(--main-text-color) !important;
+        border: 2px solid var(--main-text-color);
+        background-color: transparent;
+        margin-right: 5px;
+        max-width: 55px;
+    }
+
+    .dropdown-menu.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px !important;
+    }
+
+    .dropdownScrollAdjustment {
+        margin-right: 15px !important;
+    }
+
+    .btn-success:focus {
+        background-color: var(--standard-color);
+        border-color: var(--main-text-color);
+        box-shadow: 0 0 0 0.25rem var(--main-text-color);
+    }
+
+    .show>.btn-success.dropdown-toggle {
+        background-color: transparent;
+        border-color: var(--main-text-color);
+    }
+    .show>.btn-success.dropdown-toggle:focus {
+        background-color: var(--standard-color);
+        box-shadow: 0 0 0 0.25rem var(--standard-color);
+    }
+
+    .btn-success:hover {
+        background-color: var(--input-hover-color);
+        border-color: var(--main-text-color);
+        box-shadow: 0 0 0 0.25rem var(--input-hover-color);
+    }
+
+    .btn-success.active {
+        background-color: var(--standard-color);
+        border-color: var(--main-text-color);
+    }
+
+    #logoutDrop {
+        width: 100px !important;
+    }
+
+    #changeResultDiv {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .changeButton {
+        margin: 0;
+    }
+
+    #userAddNew {
+        margin-top: 25px;
+    }
+}
+
+
+@media (max-width:549px){
+    #arrowToTop {
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width:460px){
+
+    /* --- Buttons --- */
+
+    .showMe {
+        width: 112px !important;
+        margin: 5px !important;
+        visibility: visible;
+
+    }
+}
+
+
+@media (max-width:374px){
+
+    /* --- Buttons --- */
+
+    #arrowToTop {
+        bottom: 5px;
+        right: 20px;
+    }
+}
+
+
+@media (max-width:360px){
+    #userButtonDiv #updateButton {
+        margin-bottom: 0;
+    }
+}
+
+/*=====Media Query Css End======*/
